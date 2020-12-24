@@ -53,7 +53,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] TINGGAL SCAN :@arpunchs`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] TINGGAL SCAN :@ARPUNCHS`);
 });
 
 conn.on('credentials-updated', () =>
@@ -72,7 +72,7 @@ conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @arpunchs`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ARPUNCHS`)
 })
 
 conn.on('message-new', async(m) =>
@@ -116,13 +116,13 @@ conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsA
 
 //Chat NAGA KUYZ
 else if (text == 'assalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam, Ketik #help/#info/#donasi Contoh $help' ,MessageType.text);
+conn.sendMessage(id, 'Waalaikumsalam, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'salam'){
-conn.sendMessage(id, 'Waalaikumsalam, Ketik #help/#info/#donasi Contoh $help' ,MessageType.text);
+conn.sendMessage(id, 'Waalaikumsalam, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'asalamualaikum'){
-conn.sendMessage(id, 'Waalaikumsalam, Ketik #help/#info/#donasi Contoh $help' ,MessageType.text);
+conn.sendMessage(id, 'Waalaikumsalam, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Assalamualaikum'){
 conn.sendMessage(id, 'Waalaikumsalam, Iya ada yg bisa kami bantu?' ,MessageType.text);
@@ -134,7 +134,7 @@ else if (text == 'P'){
 conn.sendMessage(id, 'Kok gak salam lu? Tenang aja disini ada bot ketik $help untuk [menu]' ,MessageType.text);
 }
 else if (text == 'Halo'){
-conn.sendMessage(id, 'Ehh bang jago, Ketik #help untuk bantuan !' ,MessageType.text);
+conn.sendMessage(id, 'Ehh bang jago, Ketik $help untuk bantuan !' ,MessageType.text);
 }
 else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
@@ -158,49 +158,49 @@ else if (text == 'Test'){
 conn.sendMessage(id, 'Test 1,2,3 ketik $help' ,MessageType.text);
 }
 else if (text == 'Hai'){
-conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Woi'){
-conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Eoy'){
-conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Hi'){
-conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Gan'){
-conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Sis'){
-conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Bro'){
-conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Min'){
-conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
-else if (text == 'yang'){
-conn.sendMessage(id, 'Napa yang?' ,MessageType.text);
+else if (text == '#creator'){
+conn.sendMessage(id, 'PEMBUAT BOT= Wa.me/6288235435804' ,MessageType.text);
 }
 else if (text == 'I love u'){
 conn.sendMessage(id, 'love you too' ,MessageType.text);
 }
 else if (text == 'Mas'){
-conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Mba'){
-conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Bre'){
-conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Cuy'){
-conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'Euy'){
-conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, Ketik $help/#info/#donasi Contoh $help' ,MessageType.text);
 }
 else if (text == 'makasi'){
 conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
@@ -589,7 +589,7 @@ var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, info.info(id, BotName, corohelp, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
 else if (text == '#foto'){
-conn.sendMessage(id, 'kirim .foto cewek/cowok\n\nContoh: .foto cewek' ,MessageType.text);
+conn.sendMessage(id, 'kirim #foto cewek/cowok\n\nContoh: #foto cewek' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
    {
@@ -924,7 +924,7 @@ if (text.includes("#alay")){
 	})
 }
 
-//Tolonglah bro jangan di ubah ubah Naga Kuz
+//Tolonglah bro jangan di ubah ubah DRAWL NAG
 
 
 })
